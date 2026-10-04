@@ -41,6 +41,7 @@ export default function RootLayout({
     image: "https://www.route66wash.com/images/hero-main.jpeg",
     url: "https://www.route66wash.com",
     telephone: "+16269632600",
+    priceRange: "$24.99 - $45",
     foundingDate: "2004",
     address: {
       "@type": "PostalAddress",
