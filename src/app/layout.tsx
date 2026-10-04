@@ -34,6 +34,43 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AutoWash",
+  name: "Route 66 Car Wash",
+  image: "https://www.route66wash.com/images/hero-main.jpeg",
+  url: "https://www.route66wash.com",
+  telephone: "+16269632600",
+  foundingDate: "2004",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "525 E. Route 66",
+    addressLocality: "Glendora",
+    addressRegion: "CA",
+    postalCode: "91740",
+    addressCountry: "US",
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "08:00",
+    closes: "19:30",
+  },
+  sameAs: [
+    "https://www.facebook.com/474387949439096",
+    "https://www.instagram.com/route66carwashca",
+    "https://www.x.com/Route66_CarWash",
+    "https://www.yelp.com/biz/8Qiq5-vuhVmJIb-i33yiBg",
+  ],
+};
   return (
     <html lang="en" className={`${bebas.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
