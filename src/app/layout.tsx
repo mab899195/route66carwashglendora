@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description:
     "When you're in need of a car wash in Glendora, head to Route 66 Car Wash! Fast, efficient washes, detailing, and more — since 2004.",
   icons: { icon: "/images/logo-new.png" },
+   alternates: {
+    canonical: "https://www.route66wash.com/",
+  },
   openGraph: {
     title: "Route 66 Car Wash | Glendora, CA",
     description:
